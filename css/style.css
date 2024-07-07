@@ -1,0 +1,21 @@
+.nav-things{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(115, 103, 21);
+}
+button{
+    text-align: center;
+    border-radius: 0.75rem;
+    padding: 5px 20px 5px 20px;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: red;
+    
+}
+.text\:button:hover{
+    color: white;
+}
