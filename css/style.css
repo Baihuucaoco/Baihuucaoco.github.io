@@ -1,10 +1,4 @@
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 13px 50px 13px 50px;
-    background-color: rgb(115, 103, 21);
-}
+
 .text{
     background-color: aliceblue;
     text-align: center;
@@ -27,4 +21,16 @@
 input{
     border-radius: 1rem;
     padding: 3px 5px 3px 5px;
+}
+img{
+    width: 50%;
+}
+#product{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    
+}
+.card{
+    text-align: center;
+    margin: 15px;
 }

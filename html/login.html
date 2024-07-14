@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Authentication</title>
     <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
-    <a href="index.html">back</a>
-    this is login
+    <div id="container">
+        <a href="/html/index.html"><p>Back</p></a>
+        <div id="login-form" class="form hidden">
+            <h2>Log In</h2>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button onclick="auth.logIn()">Log In</button>
+            <p>Don't have an account? <a href="/html/sign up.html" onclick="toggleForms()">Sign Up</a></p>
+        </div>
+    </div>
+    <script src="/js/login.js"></script>
 </body>
 </html>
