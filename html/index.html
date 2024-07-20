@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body style="margin: 0;">
+    <!-- Nav -->
     <nav
       class="container"
       style="
@@ -24,18 +25,54 @@
         /></a>
         <input type="search" />
         <div class="some">
-          <a class="text" href="index.html">Home</a>
-          <a class="text" href="recipe.html">Recipe</a>
-          <a class="text" href="contact.html">About</a>
+          <a class="nav-items" href="index.html">Home</a>
+          <a class="nav-items" href="recipe.html">Recipe</a>
+          <a class="nav-items" href="contact.html">About</a>
         </div>
       </div>
       <div class="thing">
-        <a class="text" href="login.html">Login</a>
+        <a class="nav-items" href="login.html">Login</a>
 
-        <a class="text" href="sign up.html">Sign up</a>
+        <a class="nav-items" href="sign up.html">Sign up</a>
       </div>
     </nav>
+    <!-- Carousel -->
+    <div style="margin-top: 50px;" class="second-slide">
+      <div class="slideshow-container">
+        <div style="display: flex; align-items: center;">
+        
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">1 / 3</div> -->
+          <img style="width: 100%" src="../img/dumpling.jpg" alt="" />
+        </div>
+
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">2 / 3</div> -->
+          <img src="../img/noodle.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">3 / 3</div> -->
+          <img src="../img/wtfisthis.jpg" style="width: 100%;" />
+        </div>
+
+        <!-- Next and previous buttons -->
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <!-- Main things -->
+     <section style="margin-left: 150px; margin-right: 150px;">
+      <h2>Famous dishes</h2>
+     </section>
     <div id="product"></div>
-    <script></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>

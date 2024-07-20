@@ -34,7 +34,7 @@ async function getData(){
 		name.innerText = item.title
 		container.appendChild(name)
 		let btn = document.createElement("button")
-		btn.innerHTML = "Go to recipe -->"
+		btn.innerHTML = "Details -->"
 		container.appendChild(btn)
 		card.appendChild(container)
 		document.getElementById("product").appendChild(card)
