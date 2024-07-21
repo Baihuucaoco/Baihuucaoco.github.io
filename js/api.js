@@ -34,7 +34,13 @@ async function getData(){
 		name.innerText = item.title
 		container.appendChild(name)
 		let btn = document.createElement("button")
-		btn.innerHTML = "Details -->"
+		btn.addEventListener("click", function(){
+			window.location.href="../html/recipes2.html"
+		})
+		btn.innerHTML = "Details     "
+		let i = document.createElement("i")
+		i.classList.add("fa-solid", "fa-arrow-right")
+		btn.appendChild(i)
 		container.appendChild(btn)
 		card.appendChild(container)
 		document.getElementById("product").appendChild(card)

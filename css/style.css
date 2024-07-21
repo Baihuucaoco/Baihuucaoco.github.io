@@ -12,7 +12,18 @@
     color: gold;
 }
 
-
+button{
+  background-color: gold;
+  border-radius: 30px;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+button:hover{
+  background-color: rgb(255, 0, 0);
+  color: yellow;
+  cursor: pointer;
+  transform: scale(1.1);
+}
 .nav-items{
     text-decoration: none;
     color: black;
