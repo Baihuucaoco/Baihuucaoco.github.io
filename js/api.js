@@ -2,7 +2,7 @@ const url = 'https://chinese-food-db.p.rapidapi.com/';
 const options = {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': '93d16bfe53msh436049637a3c9dbp17f23bjsn5e2bba5a4180',
+		'x-rapidapi-key': 'ea1c44a32emsh6d3db03643ce408p1a1ba7jsn4e792869531c',
 		'x-rapidapi-host': 'chinese-food-db.p.rapidapi.com'
 	}
 };
