@@ -35,7 +35,7 @@ async function getData(){
 		container.appendChild(name)
 		let btn = document.createElement("button")
 		btn.addEventListener("click", function(){
-			window.location.href="../html/recipes2.html"
+			window.location.href=""
 		})
 		btn.innerHTML = "Details     "
 		let i = document.createElement("i")
