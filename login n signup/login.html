@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="login.css">
-</head>
-<body>
-    <div id="container" style="background-image: url(/img/tomcuacabanhbao.png); background-position: center;">
-        <a href="/html/home.html"><button id="back" style="text-align: start; ">Back</button></a>
-        <form id="login-form" class="form hidden">
-            <h2>Log In</h2>
-            <input type="email" id="login-email" placeholder="Email" required/>
-            <input type="password" id="login-password" placeholder="Password" required/>
-            <!-- <button type="submit" onclick="auth.logIn()">Log In</button> -->
-            <button type="submit" >Log In</button>
-
-            <p>Don't have an account? <a href="sign up.html" onclick="toggleForms()">Sign Up</a></p>
-        </form>
+    <link rel="stylesheet" href="login.css" />
+    <script src="https://kit.fontawesome.com/111188a099.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="full">
+    <div>
+      <a id="back" style="text-decoration: none; color: black;" href="/html/home.html"><i class="fa-solid fa-arrow-left"></i>Back</a>
     </div>
-    
-    <script type="module"  src="./class/firebase.js"></script>
-    <script type="module" src="condition.js">
-    </script>
+    <div
+      id="container"
+      style="
+        background-image: url(/img/tomcuacabanhbao.png);
+        background-position: center;
+      "
+    >
+      <form id="login-form" class="form hidden">
+        <h2>Log In</h2>
+        <input type="email" id="login-email" placeholder="Email" required />
+        <input
+          type="password"
+          id="login-password"
+          placeholder="Password"
+          required
+        />
+        <!-- <button type="submit" onclick="auth.logIn()">Log In</button> -->
+        <button type="submit">Log In</button>
+
+        <p>
+          Don't have an account?
+          <a href="sign up.html" onclick="toggleForms()">Sign Up</a>
+        </p>
+      </form>
+    </div>
+</div>
+    <script type="module" src="./class/firebase.js"></script>
+    <script type="module" src="condition.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</body>
+  </body>
 </html>
