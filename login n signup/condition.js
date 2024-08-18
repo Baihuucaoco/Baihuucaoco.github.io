@@ -7,6 +7,10 @@ async function handleSubmitLogin(e) {
     const password = document.getElementById("login-password").value;
     try {
         await firebase.login(email, password);
+        alert("Đăng nhập thành công");
+        
+		window.location.href="/html/home.html"
+		
     } catch (error) {
         alert("Something went wrong" + error.message);
     }
