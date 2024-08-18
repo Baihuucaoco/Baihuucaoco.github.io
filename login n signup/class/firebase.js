@@ -30,7 +30,7 @@ export class Firebase {
     return await createUserWithEmailAndPassword(this.auth, email, password);
   }
   async login(email, password) {
-    return await signInWithEmailAndPassword(auth, email, password);
+    return await signInWithEmailAndPassword(this.auth, email, password);
   }
   async logout() {
     return await signOut(this.auth);
